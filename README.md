@@ -30,26 +30,43 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. Describe the biggest difference between `.forEach` & `.map`.
 
-2. What is the difference between a function and a method?
+  When you use the `forEach` method, the callback function used gets invoked on each item in the array. The `map` method does the same but also creates an array with the the return values.
+
+2. What is the difference between a function and a method
+
+  Besides the syntax? They both do the same thing. Store instructions that can be invoked to run on a JS object.
 
 3. What is closure?
 
+  Closures are functions that point to the kingdom or bubble that they live in. So everything just outside of the function's bubble is technically inside the bubble, even though its not. functionBubble => {}
+
 4. Describe the four rules of the 'this' keyword.
 
-5. Why do we need super() in an extended class?
+  RULE ONE.windowbinding This points to the Window object.
+
+  RULE TWO.implicitbinding This points to the object before the dot.
+
+  RULE THREE.newbinding. This points to the constructor function.
+
+  RULE THREE.explicitbinding. This points to whatever the .call or .apply method are being called on.
+
+5. Why do we need super() in an extended class?'
+
+  It's how that class can access all the methods of the class it extended from.
+
 
 ## Project Set up
 
 Follow these steps to set up and work on your project:
 
-- [ ] Create a forked copy of this project.
-- [ ] Add PM as collaborator on Github.
-- [ ] Clone your OWN version of Repo (Not Lambda's by mistake!).
-- [ ] Create a new Branch on the clone: git checkout -b `<firstName-lastName>`.
-- [ ] Create a pull request before you start working on the project requirements.  You will continuously push your updates throughout the project.
-- [ ] You are now ready to build this project with your preferred IDE
-- [ ] Implement the project on your Branch, committing changes regularly.
-- [ ] Push commits: git push origin `<firstName-lastName>`.
+- [x ] Create a forked copy of this project.
+- [ x] Add PM as collaborator on Github.
+- [ x] Clone your OWN version of Repo (Not Lambda's by mistake!).
+- [ x] Create a new Branch on the clone: git checkout -b `<firstName-lastName>`.
+- [x ] Create a pull request before you start working on the project requirements.  You will continuously push your updates throughout the project.
+- [ x] You are now ready to build this project with your preferred IDE
+- [ x] Implement the project on your Branch, committing changes regularly.
+- [ x] Push commits: git push origin `<firstName-lastName>`.
 
 Follow these steps for completing your project:
 
@@ -70,7 +87,7 @@ Test your knowledge of objects and arrays.
 
 ## Task 2: Functions
 This challenge takes a look at callbacks and closures as well as scope. 
-* [ ] Use the [functions.js](challenges/functions.js) link to get started. Read the instructions carefully!
+* [x ] Use the [functions.js](challenges/functions.js) link to get started. Read the instructions carefully!
 
 ## Task 3: Prototypes
 Create constructors, bind methods, and create cuboids in this prototypes challenge.
