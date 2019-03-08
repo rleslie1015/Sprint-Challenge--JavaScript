@@ -22,11 +22,12 @@
         this.height = attributes.height; 
         volume() =  {
         return this.length * this.width * this.height;
-      }
+        }
         surface() = function () {
         return 2 * (this.length * this.width + this.length * this.height + this.width * this.height);
+        }
+    }
   }
-}
   
  
   const cuboid = new CuboidMaker({
